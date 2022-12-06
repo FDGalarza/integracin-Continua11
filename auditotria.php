@@ -8,7 +8,8 @@
 		<div class="form-group">
 			<div class="col-md-4" >
 				<label class="col-md-2 control-label"><strong><h4>Alumno</h4></strong></label>
-				<input type="text" class="form-control"name="txtIdAlumno" id="txtIdAlumno"placeholder="Consultar por documento" value="" onkeyup="" onchange="cargarMotosTaller(this.value)" required   />
+				<input type="text" class="form-control"name="txtIdAlumno" id="txtIdAlumno"placeholder="Consultar por documento" value="" 
+						onkeyup="" onchange="cargarMotosTaller(this.value)" required   />
 			</div>
 		</div>
 	</div>

@@ -1280,38 +1280,10 @@ function valiavehiTaller(input){
 					if(array[0] == "88"){
 						var confirmar = confirm("- el vehiculo consultado no tiene entregas pendiente.\n\n  ¿DESAE VISUALIZAR REALIZAR UNA NUEVA ENTRADA?");
 						if(confirmar){
-							console.log(array[11]);
-							document.getElementById("registrar").disabled = false;
-							document.getElementById("cancelar").disabled = false;
-							document.getElementById("registrar").value = "Registrar";
-							document.getElementById("Limpiar").disabled = false;
+							
 						}
 					}else{
-							var nombre = document.getElementById("ReparacionesNombre");
-							//document.getElementById("codPlaca").value = ;
-							nombre.value = array[2];
-							nombre.disabled = true;
-							
-							 document.getElementById("FecIngresoAux").value = array[6];
-							 document.getElementById("HoraIngAux").value = array[7];
-							
-							document.getElementById("Estado"). value = array[9];
-							document.getElementById("registrar").value = "Entregar";
-							document.getElementById("mecanico").value = array[5];
-							document.getElementById("HoraIngAux").style.display='block';
-							document.getElementById("HoraIng").style.display='none';
-							document.getElementById("HoraIngAux").disabled = true;
-							document.getElementById("FecIngresoAux").style.display='block';
-							document.getElementById("FecIngresoAux").disabled = true;
-							document.getElementById("FecIngreso").style.display='none';
-							document.getElementById("ReparacionesNombre").disabled = true;
-							document.getElementById("contentReparacion").style.display='block';
-							document.getElementById("observREparacion").disabled = true;
-							document.getElementById("reparcionesPlaca").disabled = true;
-							document.getElementById("mecanico").disabled = true;
-							document.getElementById("registrar").disabled = false;
-							document.getElementById("limpiar").disabled = false;
-							document.getElementById("observREparacion").value = array[8];
+							console.log(datos);
 						}
 						 
 				}
@@ -1398,13 +1370,13 @@ function entregarMoto(){
 	}
 	
 }
-function cargarMotosTaller(placa, string){
+function cargarMotosTaller(idalumno, string){
 
-	console.log(placa);
-	var placaVehi = placa;
+	console.log(idalumno);
+	var placaVehi = idalumno;
 	var tabla = $('#contenedorTabla');
 	console.log("bien");
-	var url = "Procedimientos/AccionlistarMotosRepara.php";
+	var url = "Procedimientos/AccionBuscaVehiTaller.php";
 		$.ajax({
 			//se determina el metodo por el cual se enviaran los datos
 			type:"post",
