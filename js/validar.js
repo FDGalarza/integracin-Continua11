@@ -6,7 +6,7 @@
 		var docIdentidad = idalumno;
 		var tabla = $('#contenedorTabla');
 		console.log("bien");
-		var url = "Procedimientos/AccionBuscaVehiTaller.php";
+		var url = "Procedimientos\AccionBuscaVehiTaller.php";
 			$.ajax({
 				//se determina el metodo por el cual se enviaran los datos
 				type:"post",
