@@ -1,5 +1,5 @@
 <?php
-	require_once('..\controlador\conexion.php');
+	require_once('../controlador/conexion.php');
 	//se capturan por el metodo post los valores enviados desde la funcion ajax
 	//$codPlacaVehiculo = $_POST['cod_vehiculo'];
 	
