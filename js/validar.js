@@ -6,7 +6,7 @@
 		var docIdentidad = idalumno;
 		var tabla = $('#contenedorTabla');
 		console.log("bien");
-		var url = "Procedimientos\AccionconsltarNotas.php";
+		var url = "Procedimientos/AccionconsltarNotas.php";
 			$.ajax({
 				//se determina el metodo por el cual se enviaran los datos
 				type:"post",
